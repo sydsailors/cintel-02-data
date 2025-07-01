@@ -103,10 +103,10 @@ def server(input, output, session):
         fig = px.scatter(
             penguins_df,
             x="bill_length_mm",
-            y="flipper_length_mm",
+            y="body_mass_g",
             color="species",
             symbol="species",
-            hover_data=["species", "island"],
+            hover_data=["island"],
             labels={
                 "bill_length_mm": "Bill Length (mm)",
                 "body_mass_g": "Body Mass (g)"
