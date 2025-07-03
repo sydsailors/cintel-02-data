@@ -71,7 +71,7 @@ def server(input, output, session):
         col = input.selected_attribute()
         bins = input.plotly_bin_count()
         if not bins:
-            bins = 15
+            bins = 17
         fig = px.histogram(
             penguins_df,
             x=col,
@@ -86,7 +86,7 @@ def server(input, output, session):
         col = input.selected_attribute()
         bins = input.seaborn_bin_count()
         if not bins:
-            bins = 20
+            bins = 17
         fig, ax = plt.subplots()
         sns.histplot(
             data=penguins_df,
